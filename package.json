@@ -1,0 +1,18 @@
+{
+  "name": "template-noir",
+  "version": "1.0.0",
+  "description": "a simple noir template with TS tests",
+  "main": "index.js",
+  "author": "siosw <git@simonoswald.xyz>",
+  "license": "MIT",
+  "scripts": {
+    "test": "cd circuits && nargo compile p && cd .. && npx hardhat test --no-compile"
+  },
+  "devDependencies": {
+    "@noir-lang/aztec_backend": "0.9.0-287d42d",
+    "@noir-lang/barretenberg": "^2.19.0",
+    "@noir-lang/noir_wasm": "^0.2.0-ca986a4",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.1",
+    "hardhat": "^2.12.7"
+  }
+}
